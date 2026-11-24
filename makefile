@@ -15,13 +15,13 @@ TARGET = sort_main
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-    $(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
-    $(CC) $(CFLAGS) $(DEPFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(DEPFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(TARGET) $(ALL_OBJS) $(ALL_OBJS:.o=.d)
+	rm -f $(TARGET) $(ALL_OBJS) $(ALL_OBJS:.o=.d)
 
 .PHONY: all clean
 
