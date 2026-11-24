@@ -1,3 +1,4 @@
 *.o
 *.d
 sort_main
+test_basic
